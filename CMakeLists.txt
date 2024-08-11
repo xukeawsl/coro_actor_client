@@ -9,7 +9,7 @@ add_library(coro_actor_client SHARED
 )
 
 target_include_directories(coro_actor_client PUBLIC
-    ${PROJECT_SOURCE_DIR}/third-party/asio/asio/include
+    ${PROJECT_SOURCE_DIR}/third-party/asio-1.30.2/include
     ${PROJECT_SOURCE_DIR}/include
 )
 
