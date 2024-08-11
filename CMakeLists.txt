@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(coro_actor_client)
+
+set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -ggdb -Wall")
+
+add_library(coro_actor_client SHARED
+    src/coro_actor_client.cpp
+)
+
+target_include_directories(coro_actor_client PUBLIC
+    ${PROJECT_SOURCE_DIR}/third-party/asio/asio/include
+    ${PROJECT_SOURCE_DIR}/include
+)
+
+target_link_libraries(coro_actor_client PUBLIC
+    pthread
+)
+
+add_executable(echo example/echo.cpp)
+target_link_libraries(echo PUBLIC coro_actor_client)
