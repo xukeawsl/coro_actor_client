@@ -1,0 +1,198 @@
+\hypertarget{classcoro__actor__reply}{}\doxysection{coro\+\_\+actor\+\_\+reply类 参考}
+\label{classcoro__actor__reply}\index{coro\_actor\_reply@{coro\_actor\_reply}}
+
+
+{\ttfamily \#include $<$coro\+\_\+actor\+\_\+reply.\+h$>$}
+
+\doxysubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{status}} \{ \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076}{status\+::success}}, 
+\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284}{status\+::failed}}, 
+\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1}{status\+::moved}}, 
+\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8}{status\+::none}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcoro__actor__reply_a34c0208e7579f1a98edfb8da9e3dafdf}{coro\+\_\+actor\+\_\+reply}} ()
+\item 
+\mbox{\hyperlink{classcoro__actor__reply_ad5ecb55daf8cfc88f2c74f92230e79b3}{$\sim$coro\+\_\+actor\+\_\+reply}} ()=default
+\item 
+\mbox{\hyperlink{classcoro__actor__reply_a1bb0423cee9e7a2f1392180ca19018c6}{coro\+\_\+actor\+\_\+reply}} (\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}} \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{status}}, uint8\+\_\+t \mbox{\hyperlink{classcoro__actor__reply_a7b80c632dea86da28b7139d5471ec0b4}{type}}, const std\+::string \&\mbox{\hyperlink{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}{data}})
+\item 
+void \mbox{\hyperlink{classcoro__actor__reply_ac280fbdfc014c402d7eea7713b9971cc}{set\+\_\+status}} (\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}} \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{status}})
+\item 
+void \mbox{\hyperlink{classcoro__actor__reply_a750ee1dde7818ebc55b21696d2d598a1}{set\+\_\+type}} (uint8\+\_\+t \mbox{\hyperlink{classcoro__actor__reply_a7b80c632dea86da28b7139d5471ec0b4}{type}})
+\item 
+void \mbox{\hyperlink{classcoro__actor__reply_a6a780a7d34b628b4a291dea524b98c58}{set\+\_\+data}} (const std\+::string \&\mbox{\hyperlink{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}{data}})
+\item 
+void \mbox{\hyperlink{classcoro__actor__reply_a63b9d8c2f512d489df2e7f0be7675a71}{set\+\_\+data}} (std\+::string \&\&\mbox{\hyperlink{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}{data}})
+\item 
+\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}} \mbox{\hyperlink{classcoro__actor__reply_a9a13ea929aeaca6a4377b6e5e5cacc0d}{status}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classcoro__actor__reply_a7b80c632dea86da28b7139d5471ec0b4}{type}} () const
+\item 
+std\+::string \mbox{\hyperlink{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}{data}} () const
+\item 
+std\+::string \mbox{\hyperlink{classcoro__actor__reply_aeac8c439dda608687dbc7e02594717ff}{move}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{classcoro__actor__reply}{coro\+\_\+actor\+\_\+reply}} 是对客户端调用请求响应的封装 
+
+\doxysubsection{成员枚举类型说明}
+\mbox{\Hypertarget{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}\label{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!status@{status}}
+\index{status@{status}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+响应的状态 \begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{success@{success}!coro\_actor\_reply@{coro\_actor\_reply}}\index{coro\_actor\_reply@{coro\_actor\_reply}!success@{success}}}\mbox{\Hypertarget{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076}\label{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076}} 
+success&获取响应成功 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{failed@{failed}!coro\_actor\_reply@{coro\_actor\_reply}}\index{coro\_actor\_reply@{coro\_actor\_reply}!failed@{failed}}}\mbox{\Hypertarget{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284}\label{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284}} 
+failed&获取响应失败 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{moved@{moved}!coro\_actor\_reply@{coro\_actor\_reply}}\index{coro\_actor\_reply@{coro\_actor\_reply}!moved@{moved}}}\mbox{\Hypertarget{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1}\label{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1}} 
+moved&响应报文内容被转移 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{none@{none}!coro\_actor\_reply@{coro\_actor\_reply}}\index{coro\_actor\_reply@{coro\_actor\_reply}!none@{none}}}\mbox{\Hypertarget{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8}\label{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8}} 
+none&响应默认状态 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classcoro__actor__reply_a34c0208e7579f1a98edfb8da9e3dafdf}\label{classcoro__actor__reply_a34c0208e7579f1a98edfb8da9e3dafdf}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!coro\_actor\_reply@{coro\_actor\_reply}}
+\index{coro\_actor\_reply@{coro\_actor\_reply}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{coro\_actor\_reply()}{coro\_actor\_reply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily coro\+\_\+actor\+\_\+reply\+::coro\+\_\+actor\+\_\+reply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+默认构造函数, 状态置为 none \mbox{\Hypertarget{classcoro__actor__reply_ad5ecb55daf8cfc88f2c74f92230e79b3}\label{classcoro__actor__reply_ad5ecb55daf8cfc88f2c74f92230e79b3}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!````~coro\_actor\_reply@{$\sim$coro\_actor\_reply}}
+\index{````~coro\_actor\_reply@{$\sim$coro\_actor\_reply}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{$\sim$coro\_actor\_reply()}{~coro\_actor\_reply()}}
+{\footnotesize\ttfamily coro\+\_\+actor\+\_\+reply\+::$\sim$coro\+\_\+actor\+\_\+reply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+默认析构函数 \mbox{\Hypertarget{classcoro__actor__reply_a1bb0423cee9e7a2f1392180ca19018c6}\label{classcoro__actor__reply_a1bb0423cee9e7a2f1392180ca19018c6}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!coro\_actor\_reply@{coro\_actor\_reply}}
+\index{coro\_actor\_reply@{coro\_actor\_reply}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{coro\_actor\_reply()}{coro\_actor\_reply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily coro\+\_\+actor\+\_\+reply\+::coro\+\_\+actor\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}}}]{status,  }\item[{uint8\+\_\+t}]{type,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+指定内容构造函数
+
+
+\begin{DoxyParams}{参数}
+{\em status} & 响应状态 \\
+\hline
+{\em type} & 响应报文类型 \\
+\hline
+{\em data} & 响应报文内容 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}\label{classcoro__actor__reply_a915e42303d3366eaf4bccdfe98a5c872}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!data@{data}}
+\index{data@{data}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily std\+::string coro\+\_\+actor\+\_\+reply\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{返回}
+响应报文内容的拷贝 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoro__actor__reply_aeac8c439dda608687dbc7e02594717ff}\label{classcoro__actor__reply_aeac8c439dda608687dbc7e02594717ff}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!move@{move}}
+\index{move@{move}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily std\+::string coro\+\_\+actor\+\_\+reply\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{返回}
+移动响应报文内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoro__actor__reply_a6a780a7d34b628b4a291dea524b98c58}\label{classcoro__actor__reply_a6a780a7d34b628b4a291dea524b98c58}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+reply\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+设置响应报文内容
+
+
+\begin{DoxyParams}{参数}
+{\em data} & 响应报文内容 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__reply_a63b9d8c2f512d489df2e7f0be7675a71}\label{classcoro__actor__reply_a63b9d8c2f512d489df2e7f0be7675a71}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+reply\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::string \&\&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+通过移动的方式设置报文内容
+
+
+\begin{DoxyParams}{参数}
+{\em data} & 响应报文内容 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__reply_ac280fbdfc014c402d7eea7713b9971cc}\label{classcoro__actor__reply_ac280fbdfc014c402d7eea7713b9971cc}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!set\_status@{set\_status}}
+\index{set\_status@{set\_status}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{set\_status()}{set\_status()}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+reply\+::set\+\_\+status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+设置响应状态
+
+
+\begin{DoxyParams}{参数}
+{\em status} & 响应状态 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__reply_a750ee1dde7818ebc55b21696d2d598a1}\label{classcoro__actor__reply_a750ee1dde7818ebc55b21696d2d598a1}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!set\_type@{set\_type}}
+\index{set\_type@{set\_type}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{set\_type()}{set\_type()}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+reply\+::set\+\_\+type (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+设置响应报文类型
+
+
+\begin{DoxyParams}{参数}
+{\em type} & 响应报文类型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__reply_a9a13ea929aeaca6a4377b6e5e5cacc0d}\label{classcoro__actor__reply_a9a13ea929aeaca6a4377b6e5e5cacc0d}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!status@{status}}
+\index{status@{status}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}} \mbox{\hyperlink{classcoro__actor__reply_a85d56371f5ec1be77d462a4878086cec}{coro\+\_\+actor\+\_\+reply\+::status}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{返回}
+响应报文状态 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoro__actor__reply_a7b80c632dea86da28b7139d5471ec0b4}\label{classcoro__actor__reply_a7b80c632dea86da28b7139d5471ec0b4}} 
+\index{coro\_actor\_reply@{coro\_actor\_reply}!type@{type}}
+\index{type@{type}!coro\_actor\_reply@{coro\_actor\_reply}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily uint8\+\_\+t coro\+\_\+actor\+\_\+reply\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{返回}
+响应报文类型 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{coro__actor__reply_8h}{coro\+\_\+actor\+\_\+reply.\+h}}\end{DoxyCompactItemize}

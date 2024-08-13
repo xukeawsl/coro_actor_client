@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>coro_actor_client: include/coro_actor_reply.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">coro_actor_client
+   </div>
+   <div id="projectbrief">coro_actor 框架客户端 API</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">coro_actor_reply.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="coro__actor__reply_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcoro__actor__reply.html">coro_actor_reply</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">   13</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076">success</a>,    </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284">failed</a>,     </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1">moved</a>,      </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>        </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a34c0208e7579f1a98edfb8da9e3dafdf">   24</a></span>&#160;    <a class="code" href="classcoro__actor__reply.html#a34c0208e7579f1a98edfb8da9e3dafdf">coro_actor_reply</a>() : status_(<a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>::none) {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classcoro__actor__reply.html#ad5ecb55daf8cfc88f2c74f92230e79b3">~coro_actor_reply</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a1bb0423cee9e7a2f1392180ca19018c6">   38</a></span>&#160;    <a class="code" href="classcoro__actor__reply.html#a1bb0423cee9e7a2f1392180ca19018c6">coro_actor_reply</a>(<a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a> <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>, uint8_t <a class="code" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>, <span class="keyword">const</span> std::string&amp; <a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : status_(<a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>), type_(<a class="code" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>), data_(<a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#ac280fbdfc014c402d7eea7713b9971cc">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcoro__actor__reply.html#ac280fbdfc014c402d7eea7713b9971cc">set_status</a>(<a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a> <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>) { status_ = <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a750ee1dde7818ebc55b21696d2d598a1">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcoro__actor__reply.html#a750ee1dde7818ebc55b21696d2d598a1">set_type</a>(uint8_t <a class="code" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>) { type_ = <a class="code" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a6a780a7d34b628b4a291dea524b98c58">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcoro__actor__reply.html#a6a780a7d34b628b4a291dea524b98c58">set_data</a>(<span class="keyword">const</span> std::string&amp; <a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>) { data_ = <a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a63b9d8c2f512d489df2e7f0be7675a71">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcoro__actor__reply.html#a63b9d8c2f512d489df2e7f0be7675a71">set_data</a>(std::string&amp;&amp; <a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>) { data_ = std::move(<a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>); }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a9a13ea929aeaca6a4377b6e5e5cacc0d">   72</a></span>&#160;    <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a> <a class="code" href="classcoro__actor__reply.html#a9a13ea929aeaca6a4377b6e5e5cacc0d">status</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> status_; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">   77</a></span>&#160;    uint8_t <a class="code" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> type_; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">   82</a></span>&#160;    std::string <a class="code" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classcoro__actor__reply.html#aeac8c439dda608687dbc7e02594717ff">   87</a></span>&#160;    std::string <a class="code" href="classcoro__actor__reply.html#aeac8c439dda608687dbc7e02594717ff">move</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        status_ = <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1">status::moved</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> std::move(data_);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">enum</span> <a class="code" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a> status_;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    uint8_t type_;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string data_;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclasscoro__actor__reply_html_a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1"><div class="ttname"><a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1">coro_actor_reply::status::moved</a></div><div class="ttdeci">@ moved</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_aeac8c439dda608687dbc7e02594717ff"><div class="ttname"><a href="classcoro__actor__reply.html#aeac8c439dda608687dbc7e02594717ff">coro_actor_reply::move</a></div><div class="ttdeci">std::string move()</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:87</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a63b9d8c2f512d489df2e7f0be7675a71"><div class="ttname"><a href="classcoro__actor__reply.html#a63b9d8c2f512d489df2e7f0be7675a71">coro_actor_reply::set_data</a></div><div class="ttdeci">void set_data(std::string &amp;&amp;data)</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:67</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_ac280fbdfc014c402d7eea7713b9971cc"><div class="ttname"><a href="classcoro__actor__reply.html#ac280fbdfc014c402d7eea7713b9971cc">coro_actor_reply::set_status</a></div><div class="ttdeci">void set_status(coro_actor_reply::status status)</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:46</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284"><div class="ttname"><a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca26934eb377001f66e37289a5c93fe284">coro_actor_reply::status::failed</a></div><div class="ttdeci">@ failed</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8">coro_actor_reply::status::none</a></div><div class="ttdeci">@ none</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a6a780a7d34b628b4a291dea524b98c58"><div class="ttname"><a href="classcoro__actor__reply.html#a6a780a7d34b628b4a291dea524b98c58">coro_actor_reply::set_data</a></div><div class="ttdeci">void set_data(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:60</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a1bb0423cee9e7a2f1392180ca19018c6"><div class="ttname"><a href="classcoro__actor__reply.html#a1bb0423cee9e7a2f1392180ca19018c6">coro_actor_reply::coro_actor_reply</a></div><div class="ttdeci">coro_actor_reply(coro_actor_reply::status status, uint8_t type, const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:38</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076">coro_actor_reply::status::success</a></div><div class="ttdeci">@ success</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html"><div class="ttname"><a href="classcoro__actor__reply.html">coro_actor_reply</a></div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:8</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a7b80c632dea86da28b7139d5471ec0b4"><div class="ttname"><a href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">coro_actor_reply::type</a></div><div class="ttdeci">uint8_t type() const</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:77</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a915e42303d3366eaf4bccdfe98a5c872"><div class="ttname"><a href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">coro_actor_reply::data</a></div><div class="ttdeci">std::string data() const</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:82</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a750ee1dde7818ebc55b21696d2d598a1"><div class="ttname"><a href="classcoro__actor__reply.html#a750ee1dde7818ebc55b21696d2d598a1">coro_actor_reply::set_type</a></div><div class="ttdeci">void set_type(uint8_t type)</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:53</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a34c0208e7579f1a98edfb8da9e3dafdf"><div class="ttname"><a href="classcoro__actor__reply.html#a34c0208e7579f1a98edfb8da9e3dafdf">coro_actor_reply::coro_actor_reply</a></div><div class="ttdeci">coro_actor_reply()</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:24</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_ad5ecb55daf8cfc88f2c74f92230e79b3"><div class="ttname"><a href="classcoro__actor__reply.html#ad5ecb55daf8cfc88f2c74f92230e79b3">coro_actor_reply::~coro_actor_reply</a></div><div class="ttdeci">~coro_actor_reply()=default</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a9a13ea929aeaca6a4377b6e5e5cacc0d"><div class="ttname"><a href="classcoro__actor__reply.html#a9a13ea929aeaca6a4377b6e5e5cacc0d">coro_actor_reply::status</a></div><div class="ttdeci">coro_actor_reply::status status() const</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:72</div></div>
+<div class="ttc" id="aclasscoro__actor__reply_html_a85d56371f5ec1be77d462a4878086cec"><div class="ttname"><a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a></div><div class="ttdeci">status</div><div class="ttdef"><b>Definition:</b> coro_actor_reply.h:13</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,133 @@
+\hypertarget{classcoro__actor__client}{}\doxysection{coro\+\_\+actor\+\_\+client类 参考}
+\label{classcoro__actor__client}\index{coro\_actor\_client@{coro\_actor\_client}}
+
+
+{\ttfamily \#include $<$coro\+\_\+actor\+\_\+client.\+h$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcoro__actor__client_a969f2b83d7f29dec6ffefd9725f1e1d8}{coro\+\_\+actor\+\_\+client}} ()
+\item 
+\mbox{\hyperlink{classcoro__actor__client_a681866be83f49cafcfbb64c8b39b0dce}{$\sim$coro\+\_\+actor\+\_\+client}} ()
+\item 
+void \mbox{\hyperlink{classcoro__actor__client_a82d3a830758c3ebc4eb6d0ec3627d249}{stop}} ()
+\item 
+\mbox{\hyperlink{coro__actor__types_8h_a0180c83b72ba7ce66b50c3e875b06697}{coro\+\_\+actor\+\_\+connect\+\_\+status}} \mbox{\hyperlink{classcoro__actor__client_ad97a1d9102eee7cae62b4c400360751d}{connect}} (const std\+::string \&host, uint16\+\_\+t port)
+\item 
+\mbox{\hyperlink{classcoro__actor__reply}{coro\+\_\+actor\+\_\+reply}} \mbox{\hyperlink{classcoro__actor__client_a5df527b88184c141fcf3a79d9d67eb76}{send}} (uint8\+\_\+t type, const std\+::string \&service, const std\+::string \&data)
+\item 
+void \mbox{\hyperlink{classcoro__actor__client_a28fb1f4ee0fc7fff5bbca6cb934db4aa}{async\+\_\+send}} (uint8\+\_\+t type, const std\+::string \&service, const std\+::string \&data, const \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} \&reply\+\_\+callback)
+\item 
+void \mbox{\hyperlink{classcoro__actor__client_a2aa1c3c41a88f96fdf2671d0b3f8c79b}{async\+\_\+send}} (uint8\+\_\+t type, const std\+::string \&service, const std\+::string \&data, uint32\+\_\+t timeout, const \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} \&reply\+\_\+callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\mbox{\hyperlink{classcoro__actor__client}{coro\+\_\+actor\+\_\+client}} 是用于向 coro\+\_\+actor 服务端发起请求的客户端对象 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classcoro__actor__client_a969f2b83d7f29dec6ffefd9725f1e1d8}\label{classcoro__actor__client_a969f2b83d7f29dec6ffefd9725f1e1d8}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!coro\_actor\_client@{coro\_actor\_client}}
+\index{coro\_actor\_client@{coro\_actor\_client}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{coro\_actor\_client()}{coro\_actor\_client()}}
+{\footnotesize\ttfamily coro\+\_\+actor\+\_\+client\+::coro\+\_\+actor\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+构造函数, 会开启一个线程等待处理请求 \mbox{\Hypertarget{classcoro__actor__client_a681866be83f49cafcfbb64c8b39b0dce}\label{classcoro__actor__client_a681866be83f49cafcfbb64c8b39b0dce}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!````~coro\_actor\_client@{$\sim$coro\_actor\_client}}
+\index{````~coro\_actor\_client@{$\sim$coro\_actor\_client}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{$\sim$coro\_actor\_client()}{~coro\_actor\_client()}}
+{\footnotesize\ttfamily coro\+\_\+actor\+\_\+client\+::$\sim$coro\+\_\+actor\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+析构函数, 会停止整个客户端的操作并等待线程结束 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classcoro__actor__client_a28fb1f4ee0fc7fff5bbca6cb934db4aa}\label{classcoro__actor__client_a28fb1f4ee0fc7fff5bbca6cb934db4aa}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!async\_send@{async\_send}}
+\index{async\_send@{async\_send}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{async\_send()}{async\_send()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+client\+::async\+\_\+send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{type,  }\item[{const std\+::string \&}]{service,  }\item[{const std\+::string \&}]{data,  }\item[{const \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} \&}]{reply\+\_\+callback }\end{DoxyParamCaption})}
+
+异步发起服务调用
+
+
+\begin{DoxyParams}{参数}
+{\em type} & 请求报文类型 \\
+\hline
+{\em service} & 请求的服务名 \\
+\hline
+{\em data} & 请求的报文内容 \\
+\hline
+{\em reply\+\_\+callback} & 处理响应报文的回调函数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__client_a2aa1c3c41a88f96fdf2671d0b3f8c79b}\label{classcoro__actor__client_a2aa1c3c41a88f96fdf2671d0b3f8c79b}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!async\_send@{async\_send}}
+\index{async\_send@{async\_send}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{async\_send()}{async\_send()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+client\+::async\+\_\+send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{type,  }\item[{const std\+::string \&}]{service,  }\item[{const std\+::string \&}]{data,  }\item[{uint32\+\_\+t}]{timeout,  }\item[{const \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} \&}]{reply\+\_\+callback }\end{DoxyParamCaption})}
+
+异步发起服务调用, 指定一个超时等待时间
+
+
+\begin{DoxyParams}{参数}
+{\em type} & 请求报文类型 \\
+\hline
+{\em service} & 请求的服务名 \\
+\hline
+{\em data} & 请求的报文内容 \\
+\hline
+{\em timeout} & 请求的超时时间 \\
+\hline
+{\em reply\+\_\+callback} & 处理响应报文的回调函数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoro__actor__client_ad97a1d9102eee7cae62b4c400360751d}\label{classcoro__actor__client_ad97a1d9102eee7cae62b4c400360751d}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!connect@{connect}}
+\index{connect@{connect}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{coro__actor__types_8h_a0180c83b72ba7ce66b50c3e875b06697}{coro\+\_\+actor\+\_\+connect\+\_\+status}} coro\+\_\+actor\+\_\+client\+::connect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{host,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+同步连接 coro\+\_\+actor 服务节点
+
+
+\begin{DoxyParams}{参数}
+{\em host} & 主机地址, 可以是 ip 地址也可以是域名 \\
+\hline
+{\em port} & 主机端口\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+连接状态 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoro__actor__client_a5df527b88184c141fcf3a79d9d67eb76}\label{classcoro__actor__client_a5df527b88184c141fcf3a79d9d67eb76}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!send@{send}}
+\index{send@{send}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcoro__actor__reply}{coro\+\_\+actor\+\_\+reply}} coro\+\_\+actor\+\_\+client\+::send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{type,  }\item[{const std\+::string \&}]{service,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+同步发起服务调用
+
+
+\begin{DoxyParams}{参数}
+{\em type} & 请求报文类型 \\
+\hline
+{\em service} & 请求的服务名 \\
+\hline
+{\em data} & 请求的报文内容\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+响应报文 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoro__actor__client_a82d3a830758c3ebc4eb6d0ec3627d249}\label{classcoro__actor__client_a82d3a830758c3ebc4eb6d0ec3627d249}} 
+\index{coro\_actor\_client@{coro\_actor\_client}!stop@{stop}}
+\index{stop@{stop}!coro\_actor\_client@{coro\_actor\_client}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void coro\+\_\+actor\+\_\+client\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+主动停止客户端的所有操作 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{coro__actor__client_8h}{coro\+\_\+actor\+\_\+client.\+h}}\end{DoxyCompactItemize}

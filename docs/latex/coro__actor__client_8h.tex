@@ -1,0 +1,37 @@
+\hypertarget{coro__actor__client_8h}{}\doxysection{include/coro\+\_\+actor\+\_\+client.h 文件参考}
+\label{coro__actor__client_8h}\index{include/coro\_actor\_client.h@{include/coro\_actor\_client.h}}
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$future$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}asio.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}coro\+\_\+actor\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}coro\+\_\+actor\+\_\+reply.\+h\char`\"{}}\newline
+coro\+\_\+actor\+\_\+client.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coro__actor__client_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcoro__actor__client}{coro\+\_\+actor\+\_\+client}}
+\end{DoxyCompactItemize}
+\doxysubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} = std\+::function$<$ void(\mbox{\hyperlink{classcoro__actor__reply}{coro\+\_\+actor\+\_\+reply}} \&reply)$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{类型定义说明}
+\mbox{\Hypertarget{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}\label{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}} 
+\index{coro\_actor\_client.h@{coro\_actor\_client.h}!coro\_actor\_reply\_callback\_t@{coro\_actor\_reply\_callback\_t}}
+\index{coro\_actor\_reply\_callback\_t@{coro\_actor\_reply\_callback\_t}!coro\_actor\_client.h@{coro\_actor\_client.h}}
+\doxysubsubsection{\texorpdfstring{coro\_actor\_reply\_callback\_t}{coro\_actor\_reply\_callback\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{coro__actor__client_8h_a0e5948b246cebc329f7e479ff10fb802}{coro\+\_\+actor\+\_\+reply\+\_\+callback\+\_\+t}} =  std\+::function$<$void(\mbox{\hyperlink{classcoro__actor__reply}{coro\+\_\+actor\+\_\+reply}}\& reply)$>$}
+
+\mbox{\hyperlink{classcoro__actor__client}{coro\+\_\+actor\+\_\+client}} 调用请求响应的回调处理函数 
