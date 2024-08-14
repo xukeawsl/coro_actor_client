@@ -18,8 +18,10 @@ target_link_libraries(coro_actor_client PUBLIC
     pthread
 )
 
-add_executable(echo example/echo.cpp)
-target_link_libraries(echo PUBLIC coro_actor_client)
+if (ENABLE_TEST)
+    add_executable(echo example/echo.cpp)
+    target_link_libraries(echo PUBLIC coro_actor_client)
+endif()
 
 include(GNUInstallDirs)
 
