@@ -1,12 +1,12 @@
 #pragma once
 
 /**
- * 默认的一个报文类型, 用户可以自行扩展
+ * @brief 默认的一个报文类型, 用户可以自行扩展
  */
 #define ACTOR_SERVICE 0
 
 /**
- * coro_actor_client 对象的连接状态
+ * @brief 客户端的连接状态
  */
 enum class coro_actor_connect_status {
     already_connected,  /**< 已连接 */

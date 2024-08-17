@@ -71,27 +71,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>用于向 coro_actor 服务端发起请求的客户端对象  
+ <a href="classcoro__actor__client.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="coro__actor__client_8h_source.html">coro_actor_client.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a969f2b83d7f29dec6ffefd9725f1e1d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a969f2b83d7f29dec6ffefd9725f1e1d8">coro_actor_client</a> ()</td></tr>
+<tr class="memdesc:a969f2b83d7f29dec6ffefd9725f1e1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数, 会开启一个线程等待处理请求  <a href="classcoro__actor__client.html#a969f2b83d7f29dec6ffefd9725f1e1d8">更多...</a><br /></td></tr>
 <tr class="separator:a969f2b83d7f29dec6ffefd9725f1e1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681866be83f49cafcfbb64c8b39b0dce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a681866be83f49cafcfbb64c8b39b0dce">~coro_actor_client</a> ()</td></tr>
+<tr class="memdesc:a681866be83f49cafcfbb64c8b39b0dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数, 会停止整个客户端的操作并等待线程结束  <a href="classcoro__actor__client.html#a681866be83f49cafcfbb64c8b39b0dce">更多...</a><br /></td></tr>
 <tr class="separator:a681866be83f49cafcfbb64c8b39b0dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d3a830758c3ebc4eb6d0ec3627d249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a82d3a830758c3ebc4eb6d0ec3627d249">stop</a> ()</td></tr>
+<tr class="memdesc:a82d3a830758c3ebc4eb6d0ec3627d249"><td class="mdescLeft">&#160;</td><td class="mdescRight">主动停止客户端的所有操作  <a href="classcoro__actor__client.html#a82d3a830758c3ebc4eb6d0ec3627d249">更多...</a><br /></td></tr>
 <tr class="separator:a82d3a830758c3ebc4eb6d0ec3627d249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97a1d9102eee7cae62b4c400360751d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="coro__actor__types_8h.html#a0180c83b72ba7ce66b50c3e875b06697">coro_actor_connect_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#ad97a1d9102eee7cae62b4c400360751d">connect</a> (const std::string &amp;host, uint16_t port)</td></tr>
+<tr class="memdesc:ad97a1d9102eee7cae62b4c400360751d"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步连接 coro_actor 服务节点  <a href="classcoro__actor__client.html#ad97a1d9102eee7cae62b4c400360751d">更多...</a><br /></td></tr>
 <tr class="separator:ad97a1d9102eee7cae62b4c400360751d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df527b88184c141fcf3a79d9d67eb76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcoro__actor__reply.html">coro_actor_reply</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a5df527b88184c141fcf3a79d9d67eb76">send</a> (uint8_t type, const std::string &amp;service, const std::string &amp;data)</td></tr>
+<tr class="memdesc:a5df527b88184c141fcf3a79d9d67eb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步发起服务调用  <a href="classcoro__actor__client.html#a5df527b88184c141fcf3a79d9d67eb76">更多...</a><br /></td></tr>
 <tr class="separator:a5df527b88184c141fcf3a79d9d67eb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fb1f4ee0fc7fff5bbca6cb934db4aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a28fb1f4ee0fc7fff5bbca6cb934db4aa">async_send</a> (uint8_t type, const std::string &amp;service, const std::string &amp;data, const <a class="el" href="coro__actor__client_8h.html#a0e5948b246cebc329f7e479ff10fb802">coro_actor_reply_callback_t</a> &amp;reply_callback)</td></tr>
+<tr class="memdesc:a28fb1f4ee0fc7fff5bbca6cb934db4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步发起服务调用  <a href="classcoro__actor__client.html#a28fb1f4ee0fc7fff5bbca6cb934db4aa">更多...</a><br /></td></tr>
 <tr class="separator:a28fb1f4ee0fc7fff5bbca6cb934db4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa1c3c41a88f96fdf2671d0b3f8c79b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__client.html#a2aa1c3c41a88f96fdf2671d0b3f8c79b">async_send</a> (uint8_t type, const std::string &amp;service, const std::string &amp;data, uint32_t timeout, const <a class="el" href="coro__actor__client_8h.html#a0e5948b246cebc329f7e479ff10fb802">coro_actor_reply_callback_t</a> &amp;reply_callback)</td></tr>
+<tr class="memdesc:a2aa1c3c41a88f96fdf2671d0b3f8c79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步发起服务调用, 指定一个超时等待时间  <a href="classcoro__actor__client.html#a2aa1c3c41a88f96fdf2671d0b3f8c79b">更多...</a><br /></td></tr>
 <tr class="separator:a2aa1c3c41a88f96fdf2671d0b3f8c79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p><a class="el" href="classcoro__actor__client.html">coro_actor_client</a> 是用于向 coro_actor 服务端发起请求的客户端对象 </p>
+<div class="textblock"><p>用于向 coro_actor 服务端发起请求的客户端对象 </p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a969f2b83d7f29dec6ffefd9725f1e1d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a969f2b83d7f29dec6ffefd9725f1e1d8">&#9670;&nbsp;</a></span>coro_actor_client()</h2>
@@ -107,6 +117,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>构造函数, 会开启一个线程等待处理请求 </p>
 
 </div>
@@ -125,6 +136,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>析构函数, 会停止整个客户端的操作并等待线程结束 </p>
 
 </div>
@@ -167,7 +179,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>异步发起服务调用</p>
+
+<p>异步发起服务调用 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>请求报文类型 </td></tr>
@@ -223,7 +236,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>异步发起服务调用, 指定一个超时等待时间</p>
+
+<p>异步发起服务调用, 指定一个超时等待时间 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>请求报文类型 </td></tr>
@@ -262,7 +276,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>同步连接 coro_actor 服务节点</p>
+
+<p>同步连接 coro_actor 服务节点 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">host</td><td>主机地址, 可以是 ip 地址也可以是域名 </td></tr>
@@ -305,7 +320,8 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>同步发起服务调用</p>
+
+<p>同步发起服务调用 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>请求报文类型 </td></tr>
@@ -332,6 +348,7 @@ Public 成员函数</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>主动停止客户端的所有操作 </p>
 
 </div>

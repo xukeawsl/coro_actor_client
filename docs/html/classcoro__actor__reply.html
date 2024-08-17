@@ -71,6 +71,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>对客户端调用请求响应的封装  
+ <a href="classcoro__actor__reply.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="coro__actor__reply_8h_source.html">coro_actor_reply.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -80,23 +83,31 @@ Public 类型</h2></td></tr>
 <a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca11dfd868d93bc2b0e4ce0bee5756f8b1">status::moved</a>, 
 <a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086ceca334c4a4c42fdb79d7ebc3e73b517e6f8">status::none</a>
  }</td></tr>
+<tr class="memdesc:a85d56371f5ec1be77d462a4878086cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">响应的状态  <a href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">更多...</a><br /></td></tr>
 <tr class="separator:a85d56371f5ec1be77d462a4878086cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a34c0208e7579f1a98edfb8da9e3dafdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a34c0208e7579f1a98edfb8da9e3dafdf">coro_actor_reply</a> ()</td></tr>
+<tr class="memdesc:a34c0208e7579f1a98edfb8da9e3dafdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数, 状态置为 none  <a href="classcoro__actor__reply.html#a34c0208e7579f1a98edfb8da9e3dafdf">更多...</a><br /></td></tr>
 <tr class="separator:a34c0208e7579f1a98edfb8da9e3dafdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ecb55daf8cfc88f2c74f92230e79b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#ad5ecb55daf8cfc88f2c74f92230e79b3">~coro_actor_reply</a> ()=default</td></tr>
+<tr class="memdesc:ad5ecb55daf8cfc88f2c74f92230e79b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认析构函数  <a href="classcoro__actor__reply.html#ad5ecb55daf8cfc88f2c74f92230e79b3">更多...</a><br /></td></tr>
 <tr class="separator:ad5ecb55daf8cfc88f2c74f92230e79b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb0423cee9e7a2f1392180ca19018c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a1bb0423cee9e7a2f1392180ca19018c6">coro_actor_reply</a> (<a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a> <a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>, uint8_t <a class="el" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>, const std::string &amp;<a class="el" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>)</td></tr>
+<tr class="memdesc:a1bb0423cee9e7a2f1392180ca19018c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定内容构造函数  <a href="classcoro__actor__reply.html#a1bb0423cee9e7a2f1392180ca19018c6">更多...</a><br /></td></tr>
 <tr class="separator:a1bb0423cee9e7a2f1392180ca19018c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac280fbdfc014c402d7eea7713b9971cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#ac280fbdfc014c402d7eea7713b9971cc">set_status</a> (<a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a> <a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">status</a>)</td></tr>
+<tr class="memdesc:ac280fbdfc014c402d7eea7713b9971cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置响应状态  <a href="classcoro__actor__reply.html#ac280fbdfc014c402d7eea7713b9971cc">更多...</a><br /></td></tr>
 <tr class="separator:ac280fbdfc014c402d7eea7713b9971cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750ee1dde7818ebc55b21696d2d598a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a750ee1dde7818ebc55b21696d2d598a1">set_type</a> (uint8_t <a class="el" href="classcoro__actor__reply.html#a7b80c632dea86da28b7139d5471ec0b4">type</a>)</td></tr>
+<tr class="memdesc:a750ee1dde7818ebc55b21696d2d598a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置响应报文类型  <a href="classcoro__actor__reply.html#a750ee1dde7818ebc55b21696d2d598a1">更多...</a><br /></td></tr>
 <tr class="separator:a750ee1dde7818ebc55b21696d2d598a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a780a7d34b628b4a291dea524b98c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a6a780a7d34b628b4a291dea524b98c58">set_data</a> (const std::string &amp;<a class="el" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>)</td></tr>
+<tr class="memdesc:a6a780a7d34b628b4a291dea524b98c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置响应报文内容  <a href="classcoro__actor__reply.html#a6a780a7d34b628b4a291dea524b98c58">更多...</a><br /></td></tr>
 <tr class="separator:a6a780a7d34b628b4a291dea524b98c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b9d8c2f512d489df2e7f0be7675a71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a63b9d8c2f512d489df2e7f0be7675a71">set_data</a> (std::string &amp;&amp;<a class="el" href="classcoro__actor__reply.html#a915e42303d3366eaf4bccdfe98a5c872">data</a>)</td></tr>
+<tr class="memdesc:a63b9d8c2f512d489df2e7f0be7675a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过移动的方式设置报文内容  <a href="classcoro__actor__reply.html#a63b9d8c2f512d489df2e7f0be7675a71">更多...</a><br /></td></tr>
 <tr class="separator:a63b9d8c2f512d489df2e7f0be7675a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a13ea929aeaca6a4377b6e5e5cacc0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcoro__actor__reply.html#a85d56371f5ec1be77d462a4878086cec">coro_actor_reply::status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcoro__actor__reply.html#a9a13ea929aeaca6a4377b6e5e5cacc0d">status</a> () const</td></tr>
 <tr class="separator:a9a13ea929aeaca6a4377b6e5e5cacc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,7 +119,7 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:aeac8c439dda608687dbc7e02594717ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p><a class="el" href="classcoro__actor__reply.html">coro_actor_reply</a> 是对客户端调用请求响应的封装 </p>
+<div class="textblock"><p>对客户端调用请求响应的封装 </p>
 </div><h2 class="groupheader">成员枚举类型说明</h2>
 <a id="a85d56371f5ec1be77d462a4878086cec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85d56371f5ec1be77d462a4878086cec">&#9670;&nbsp;</a></span>status</h2>
@@ -129,6 +140,7 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>响应的状态 </p>
 <table class="fieldtable">
 <tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a85d56371f5ec1be77d462a4878086ceca260ca9dd8a4577fc00b7bd5810298076"></a>success&#160;</td><td class="fielddoc"><p>获取响应成功 </p>
@@ -166,6 +178,7 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>默认构造函数, 状态置为 none </p>
 
 </div>
@@ -192,6 +205,7 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>默认析构函数 </p>
 
 </div>
@@ -235,7 +249,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>指定内容构造函数</p>
+
+<p>指定内容构造函数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>响应状态 </td></tr>
@@ -323,7 +338,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>设置响应报文内容</p>
+
+<p>设置响应报文内容 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>响应报文内容 </td></tr>
@@ -356,7 +372,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>通过移动的方式设置报文内容</p>
+
+<p>通过移动的方式设置报文内容 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>响应报文内容 </td></tr>
@@ -389,7 +406,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>设置响应状态</p>
+
+<p>设置响应状态 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>响应状态 </td></tr>
@@ -422,7 +440,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>设置响应报文类型</p>
+
+<p>设置响应报文类型 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>响应报文类型 </td></tr>
